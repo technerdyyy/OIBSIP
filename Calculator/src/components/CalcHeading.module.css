@@ -1,0 +1,10 @@
+.heading {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 3rem;
+  color: #002f42;
+  background-color: #d7f4ff;
+  position: absolute;
+  left: 41.5%;
+  top: 10%;
+}

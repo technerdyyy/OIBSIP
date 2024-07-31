@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: "Geneva";
+  transition: 0.3s linear;
+}
+
+*::-webkit-scrollbar {
+  height: 1rem;
+  width: 0.75rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #635549;
+}
+
+*::selection {
+  background-color: #ae9156;
+  color: #000;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
+}
+
+/* Home Section */
+.home {
+  height: 100vh;
+  background: url(images/KN-8.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.home .header {
+  position: fixed;
+  display: flex;
+  right: 0;
+  padding-top: 2rem;
+  gap: none;
+}
+
+.home .header i {
+  font-size: 1.5rem;
+  color: #cac9cf;
+  margin-right: 4rem;
+  padding: 0.5rem;
+}
+
+.home .header i:hover {
+  color: #ae9156;
+  border-bottom: 5px solid #ae9156;
+  border-radius: 1rem;
+  transition: all 0.2s linear;
+}
+
+.home .side-icons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 3%;
+  top: 35%;
+  transform: translateY(-55%);
+  z-index: 1000;
+  gap: 1.5rem;
+}
+
+.home .side-icons i {
+  color: #cac9cf;
+  font-size: 1.5rem;
+  opacity: 80%;
+}
+
+.home .container {
+  position: absolute;
+  top: 30%;
+  left: 6%;
+  transform: translateY(-50%);
+  width: 44rem;
+}
+
+.home .container h1 {
+  font-size: 6.5rem;
+  color: #cac9cf;
+}
+
+.home .container h2 {
+  font-size: 1.5rem;
+  margin: 2rem 0 0 0.25rem;
+  color: #cac9cf;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 2.25rem;
+}
+
+/* Biography Section */
+.biography {
+  height: 100vh;
+  background-color: #cac9cf;
+  mix-blend-mode: difference;
+}
+
+.biography .bio {
+  position: relative;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  text-align: justify;
+}
+
+.biography .bio #top-line {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 1px;
+  background-color: #030302;
+  margin-bottom: 2rem;
+}
+
+.biography .bio #bottom-line {
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 1px;
+  background-color: #030302;
+  margin-top: 2rem;
+}
+
+.biography .bio h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5rem;
+}
+
+.biography .bio p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-top: 5rem;
+}
+
+.top-icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 13%;
+  gap: 7rem;
+  margin-bottom: -1rem;
+}
+
+.top-icons .top-icon {
+  position: relative;
+  font-size: 1.75rem;
+}
+
+.top-icons #two {
+  right: -15%;
+}
+
+.biography .bio-two {
+  position: relative;
+  display: flex;
+  top: 12%;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+
+.biography .bio-two .bio-two-icon-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  right: 0.5%;
+}
+.biography .bio-two .bio-two-icon-left i {
+  align-self: flex-start;
+  z-index: 1000;
+  font-size: 1.75rem;
+  margin-bottom: 0;
+}
+
+.biography .bio-two .bio-two-icon-left #invisible {
+  color: #cac9cf;
+}
+
+.biography .bio-two img {
+  height: 20rem;
+  margin-bottom: 0;
+  margin-right: 2rem;
+  margin-left: 0;
+  width: 20%;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 0;
+  padding-left: 0;
+  border-right: 2px double black;
+  pointer-events: none;
+}
+
+/* Footer Section */
+.credit {
+  background-color: #cac9cf;
+  text-align: center;
+  padding: 25px;
+  padding-top: 40px;
+  font-size: 22px;
+  color: #333;
+  border-top: 1.5px solid rgb(0, 0, 0, 0.1);
+  text-indent: 1rem;
+}
+
+.credit span {
+  color: #635549;
+  text-decoration: none;
+}
+
+.credit a {
+  text-decoration: none;
+  color: #333;
+}

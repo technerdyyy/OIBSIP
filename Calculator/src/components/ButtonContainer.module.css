@@ -1,0 +1,43 @@
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.button {
+  width: 4rem;
+  height: 4rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  background-color: #d7f4ff;
+  color: black;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.button:hover {
+  background-color: #00b4d8;
+  color: #d5f3f9;
+}
+
+.acButton,
+.delButton {
+  opacity: 70%;
+}
+
+.equalButton {
+  background-color: #03045e;
+  color: #d5f3f9;
+  width: 9rem;
+}
+
+.equalButton:hover {
+  background-color: #03045e;
+  color: #d5f3f9;
+}
+
+.operator {
+  background-color: #023e8a;
+  color: #d5f3f9;
+}
