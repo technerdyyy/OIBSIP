@@ -5,7 +5,7 @@
 ## Description
 
 <br>
-This is a basic alculator that will allow user to perform simple operations like : addition, subtraction, multiplication, division and finding out percentage of a number.
+This is a basic calculator that will allow user to perform simple operations like : addition, subtraction, multiplication, division and finding out percentage of a number.
 <br> <br>
 
 ## Features
