@@ -6,18 +6,31 @@ import CalcHeading from "./components/CalcHeading";
 
 function App() {
   const [calValue, setCalValue] = useState("");
+  const [lastBtnEquals, setLastBtnEquals] = useState(false);
   const onButtonClick = (buttonText) => {
     if (buttonText === "AC") {
       setCalValue("");
+      setLastBtnEquals(false);
     } else if (buttonText === "DEL") {
       setCalValue(calValue.slice(0, -1));
     } else if (buttonText === "=") {
       setCalValue(eval(calValue).toString());
+      setLastBtnEquals(true);
     } else if (buttonText === "%") {
-      setCalValue((calValue / 100).toString());
+      setCalValue((parseFloat(calValue) / 100).toString());
+      setLastBtnEquals(false);
     } else {
-      const newDisplayValue = calValue + buttonText;
-      setCalValue(newDisplayValue);
+      if (lastBtnEquals) {
+        if (isNaN(buttonText)) {
+          // Checks if the buttonText is not a number (i.e., it's an operator)
+          setCalValue(calValue + buttonText);
+        } else {
+          setCalValue(buttonText);
+        }
+        setLastBtnEquals(false);
+      } else {
+        setCalValue(calValue + buttonText);
+      }
     }
   };
 
