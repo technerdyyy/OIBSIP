@@ -1,21 +1,25 @@
 /* eslint-disable react/prop-types */
+import { TbAlertTriangleFilled } from "react-icons/tb";
 import { useState } from "react";
 import { FaPlus } from "react-icons/fa";
 function Form(props) {
   const [name, setName] = useState("");
+  const [error, setError] = useState(null);
 
   function handleSubmit(event) {
     event.preventDefault();
     if (name.trim() === "") {
-      props.addTask("Please enter a task!");
+      setError("Please enter a task!");
       return;
     } else {
       props.addTask(name);
       setName("");
+      setError(null);
     }
   }
   function handleChange(event) {
     setName(event.target.value);
+    setError(null);
   }
 
   return (
@@ -30,6 +34,12 @@ function Form(props) {
         value={name}
         onChange={handleChange}
       />
+      {error && (
+        <div style={{ color: "red" }} className="warning-msg">
+          <TbAlertTriangleFilled className="warning" />
+          {error}
+        </div>
+      )}
       <button type="submit" className="btn btn__primary btn__lg">
         <FaPlus />
       </button>

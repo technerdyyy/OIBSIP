@@ -1,8 +1,9 @@
+/* eslint-disable react-refresh/only-export-components */
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-// eslint-disable-next-line
+
 const DATA = [
   { id: "todo-0", name: "Wake up", completed: true },
   { id: "todo-1", name: "Eat breakfast", completed: false },
