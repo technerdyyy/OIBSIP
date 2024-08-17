@@ -24,7 +24,9 @@ This is a login authentication project where users can sign up with their userna
 
 <br>
 --> Frontend: HTML, CSS
+<br>
 --> Backend: Node.js, Express.js.
+<br>
 --> Database: MongoDB.
 <br> <br>
 
@@ -41,10 +43,10 @@ This project belongs solely to the author
 ## Screenshots
 
 <br> <br>
-<img src="public/loginPageDemo.png">
+<img src="public/loginPageDemo.png"/>
 <br>
-<img src="public/signupPageDemo.png">
+<img src="public/signupPageDemo.png"/>
 <br>
-<img src="public/userLoginDemo.png">
+<img src="public/userLoginDemo.png"/>
 <br>
-<img src="public/homePageDemo.png">
+<img src="public/homePageDemo.png"/>
