@@ -1,0 +1,11 @@
+body {
+  background: url(bg-img2.png) no-repeat;
+  background-size: cover;
+}
+
+.welcome-msg {
+  font-size: 4rem;
+  text-align: left;
+  margin-top: 20rem;
+  margin-left: 18rem;
+}
