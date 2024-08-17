@@ -42,6 +42,9 @@ This project belongs solely to the author
 
 <br> <br>
 <img src="public/loginPageDemo.png">
+<br>
 <img src="public/signupPageDemo.png">
+<br>
 <img src="public/userLoginDemo.png">
+<br>
 <img src="public/homePageDemo.png">
